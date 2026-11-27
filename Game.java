@@ -37,4 +37,24 @@ public class Game
         // put your code here
         return title;
     }
+    
+    public String getGenre()
+    {
+        return genre;
+    }
+    
+    public String getPlatform()
+    {
+        return platform;
+    }
+    
+    public String getAgeRating()
+    {
+        return ageRating;
+    }
+    
+    public void addRating(int rating)
+    {
+        ratings.add(rating);
+    }
 }
