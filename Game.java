@@ -64,10 +64,15 @@ public class Game
             return 0;
         }
         int sum = 0;
-        for (int i = 0; i< ratings.size(); i++)
+        for (int i = 0; i < ratings.size(); i++)
         {
             sum += ratings.get(i);
         }
         return (double) sum/ratings.size(); 
+    }
+    
+    public void printDetails() {
+        System.out.println(title + " | " + genre + " | " + platform + " | " 
+        + ageRating + " | Avg rating:" + getAverageRating()); 
     }
 }
