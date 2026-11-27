@@ -34,7 +34,6 @@ public class Game
      */
     public String getTitle()
     {
-        // put your code here
         return title;
     }
     
@@ -56,5 +55,19 @@ public class Game
     public void addRating(int rating)
     {
         ratings.add(rating);
+    }
+    
+    public double getAverageRating()
+    {
+        if (ratings.size() == 0)
+        {
+            return 0;
+        }
+        int sum = 0;
+        for (int i = 0; i< ratings.size(); i++)
+        {
+            sum += ratings.get(i);
+        }
+        return (double) sum/ratings.size(); 
     }
 }
